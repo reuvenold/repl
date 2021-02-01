@@ -69,3 +69,8 @@ img.pic {
     max-width: 255px;
     max-height: 255px;
 }
+div.blank {
+    background-color: unset;
+    height: unset;
+    width: unset;
+}
