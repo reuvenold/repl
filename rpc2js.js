@@ -1,14 +1,9 @@
-function getPass() {
-    var put = prompt('enter password: ');
-    if (put === 'rrr009') {
+function check() {
+    if (document.getElementById('pas').value == 'rrr009') {
         document.location = "https://reuvkess.github.io/repl/rpc2.html";
     }
-    if (put === '') {
-        document.location = "https://reuvkess.github.io/repl/rpc2gp.html"
-    }
-    if (put !== 'rrr009') {
+    if (put != 'rrr009') {
         alert('Password incorrect');
-        getPass();
     }
 }
 ctb = function () {
