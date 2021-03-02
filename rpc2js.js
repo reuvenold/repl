@@ -2,7 +2,7 @@ function check() {
     if (document.getElementById('pas').value == 'rrr009') {
         document.location = "https://reuvkess.github.io/repl/rpc2.html";
     }
-    if (put != 'rrr009') {
+    if (document.getElementById('pas').value != 'rrr009') {
         alert('Password incorrect');
     }
 }
