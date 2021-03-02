@@ -1,15 +1,5 @@
-function con(a, b) {
-    var i;
-    for (i = 0; i < 10; i++) {
-        if (b[i] == a) {
-            return true;
-        }
-    }
-    return false;
-}
-var unl = ["Benny", "benny", "Rosner", "Shozner", "Tamir", "tamir", "gisher", "Gisher", "temp", "reuvkess"]
 function check() {
-    if (document.getElementById('pas').value == 'rrr009' && con(docuemnt.getElementById("un").value, unl)) {
+    if (document.getElementById('pas').value == 'rrr009') {
         document.location = "https://reuvkess.github.io/repl/rpc2.html";
     }
     if (document.getElementById('pas').value != 'rrr009') {
