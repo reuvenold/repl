@@ -1,3 +1,9 @@
+function ic() {
+    if (document.getElementById('pas').value == "") {
+        document.getElementById('pas').style.background="url('./inba.png')";
+    } else {
+        document.getElementById('pas').style.background="#abcdef";
+}
 function check() {
     if (document.getElementById('pas').value == 'rrr009') {
         document.location = "https://reuvkess.github.io/repl/rpc2.html";
