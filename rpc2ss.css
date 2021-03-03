@@ -43,7 +43,7 @@ div {
 
 }
 button:hover {
-    background-color: darkgreen;
+    opacity: 0.4;
 }
 a {
     color: black;
