@@ -6,6 +6,12 @@ function check() {
         alert('Password incorrect');
     }
 }
+document.onkeypress = function (e) {
+    e = e || window.event;
+    if (e.keyCode == 'Enter') {
+        check();
+    }
+}
 ctb = function () {
     document.getElementById('bod').style.backgroundColor="lightskyblue";
 }
