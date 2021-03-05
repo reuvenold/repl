@@ -1,6 +1,6 @@
 function check() {
     if (document.getElementById('pas').value == 'rrr009') {
-        document.location = "https://reuvkess.github.io/repl/rpc2.html";
+        document.location = "https://reuvkess.github.io/repl/mainpage/";
     }
     if (document.getElementById('pas').value != 'rrr009') {
         alert('Password incorrect');
