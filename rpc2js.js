@@ -12,7 +12,7 @@ document.onkeypress = function (e) {
         check();
     }
 }
-var myswitch = 0;
+var myswitch = 1;
 function change() {
     var c;
     if (myswitch == 0) {
