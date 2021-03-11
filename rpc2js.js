@@ -1,8 +1,6 @@
-var acc = false;
 function check() {
     if (document.getElementById('pas').value == 'rrr009') {
-        document.location = "./mainpage/";
-        acc = true;
+        document.location = "./mainpage/?pass=rrr009";
     }
     if (document.getElementById('pas').value != 'rrr009') {
         alert('Password incorrect');
