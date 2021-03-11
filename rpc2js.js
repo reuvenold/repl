@@ -1,6 +1,6 @@
 function check() {
     if (document.getElementById('pas').value == 'rrr009') {
-        document.location = "./mainpage/?pass=rrr009";
+        document.location = "./mainpage/";
     }
     if (document.getElementById('pas').value != 'rrr009') {
         alert('Password incorrect');
