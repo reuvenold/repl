@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Reuven's place: Tic Tac Toe</title>
+	<link rel="icon" href="../faviction.ico">
+	<style>
+		h1 {
+			color: white;
+			background: #CD5C5C;
+			border-radius: 25px;
+			height: 175px;
+		}
+		body {
+			background: #1E90FF;
+		}
+		div {
+			text-align: center;
+		}
+		* {
+			font-family: monospace, sans-serif;
+		}
+		.con {
+			background: #1e8624;
+			height: 375px; width: 675px;
+			margin: 0 auto;
+			border-radius: 25px;
+		}
+		button {
+			background: #11baa2;
+			border: unset;
+			outline: unset;
+			height: 65px;
+			width: 100px;
+			margin-top: 140px;
+			margin-right: 30px;
+			margin-left: 30px;
+		}
+		button:hover {
+			opacity: 0.54;
+		}
+	</style>
+</head>
+<body style="text-align: center;">
+<h1><br><br>Tic Tac Toe</h1><br>
+<h1><br><br>איקס עיגול</h1>
+<div><div class="con"><button>click me<br>to download</button><button>תלחצו עלי כדי להוריד</button></div></div>
+<script>
+	var button_list = document.getElementsByTagName('button');
+	var i;
+	for (i=0;i<2;i++) {
+		button_list[i].addEventListener("click", function(){location="https://reuvkess.github.io/tictactoe_cpp/tictactoe.exe"});
+	}
+</script>
+</body>
+</html>
