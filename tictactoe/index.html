@@ -54,11 +54,8 @@
 <h1><br><br>Tic Tac Toe</h1><br>
 <div><div class="con"><button>click me<br>to download</button></div></div>
 <script>
-	var button_list = document.getElementsByTagName('button');
-	var i;
-	for (i=0;i<2;i++) {
-		button_list[i].addEventListener("click", function(){location="https://reuvkess.github.io/tictactoe_cpp/tictactoe.exe"});
-	}
+	var button = document.getElementsByTagName('button')[0];
+	button.addEventListener("click", function(){location="https://reuvkess.github.io/tictactoe_cpp/tictactoe.exe"});
 </script>
 </body>
 </html>
