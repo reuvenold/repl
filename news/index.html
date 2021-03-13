@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Reuven's place: news</title>
+	<link rel="icon" href="../faviction.ico">
+	<style>
+		body {
+			background: #CD5C5C;
+		}
+		* {
+			font-family: monospace, sans-serif;
+			color: #FFFFFF;
+		}
+		.report {
+			background: #E5F4F3;
+			height: 275px;
+			width: 550px;
+			margin:0 auto;
+			border-radius: 10px;
+		}
+		.repico {
+			float: right;
+			border-radius: 1px;
+			height: 85px;
+			width: 85px;
+		}
+		.center {
+			text-align: center;
+			display: block;
+		}
+		#reports {
+			text-align: center;
+			border-right: 2px solid #000000;
+			border-left: 2px solid #000000;
+			width: 750px;
+			height: 600px;
+			margin:0 auto;
+		}
+		#info {
+			text-align: left;
+		}
+		#date-time {
+			font-family: monospace;
+			font-size: 20px;
+		}
+		#no {
+			font-size: 30px;
+		}
+		h1 {
+			background: #1E90FF;
+			text-align: center;
+			height: 115px;
+			border-radius: 15px;
+		}
+	</style>
+</head>
+<body>
+<a href="../">
+	<img src="../faviction.ico" style="height: 95px; width: 95px; border-radius: 25px;">
+</a>
+<div id="info">
+<div>tic-tac-toe newest version: 1.2.5</div>
+<br>
+<div id="date-time"></div>
+</div>
+<script>
+ref=function(){
+var con = {"Jan": 1, "Feb": 2, "Mar": 3, "Apr": 4, "May": 5, "Jun": 6, "Jul": 7, "Aug": 8, "Sep": 9, "Oct": 10, "Nov": 11, "Dec": 12};
+var dtl = [Date().split(' ')[2], con[Date().split(' ')[1]], Date().split(' ')[3]];
+document.getElementById('date-time').innerHTML=dtl.join('/');}
+ref();
+</script>
+<h1><br>News</h1>
+<div class="center">
+<div id="reports">
+<div><div id="no">No news right now</div></div>
+</div>
+</div>
+</body>
+</html>
