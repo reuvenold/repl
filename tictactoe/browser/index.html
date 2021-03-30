@@ -7,7 +7,8 @@
     <script>
         function refresh() {
             var a = document.getElementsByTagName("iframe")[0];
-            setTimeout(function(){a.src="";setTimeout(function(){a.src="./app.html#board";}, 5);}, 5);
+            a.src="";
+            setTimeout(function(){a.src="./app.html#board";}, 2);
         }
     </script>
 </head>
