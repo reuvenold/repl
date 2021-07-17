@@ -12,6 +12,4 @@ web_ttt.onclick = function() {
     link('browser/');
 }
 
-if (document.location == 'https://tictactoe.reuvensplace.com/') {
-    document.location = 'https://reuvensplace.com/tictactoe';
-}
+setTimeout(function(){if(document.location=='https://tictactoe.reuvensplace.com/'){document.location='https://reuvensplace.com/tictactoe';}}, 10)
