@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Reuven's place: Tic-Tac-Toe</title>
+    <link rel="icon" href="../../faviction.ico">
+    <link rel="stylesheet" href="./main.css">
+    <script src="./main.js"></script>
+</head>
+<body>
+<div class="center">
+    <div id="board">
+        <table>
+            <tr>
+                <td id="lt" onclick="getClick(0, 0, this.id); someone_won(); is_draw();"></td>
+                <td id="mt" onclick="getClick(0, 1, this.id); someone_won(); is_draw();"></td>
+                <td id="rt" onclick="getClick(0, 2, this.id); someone_won(); is_draw();"></td>
+            </tr>
+            <tr>
+                <td id="lm" onclick="getClick(1, 0, this.id); someone_won(); is_draw();"></td>
+                <td id="m"  onclick="getClick(1, 1, this.id); someone_won(); is_draw();"></td>
+                <td id="rm" onclick="getClick(1, 2, this.id); someone_won(); is_draw();"></td>
+            </tr>
+            <tr>
+                <td id="lb" onclick="getClick(2, 0, this.id); someone_won(); is_draw();"></td>
+                <td id="mb" onclick="getClick(2, 1, this.id); someone_won(); is_draw();"></td>
+                <td id="rb" onclick="getClick(2, 2, this.id); someone_won(); is_draw();"></td>
+            </tr>
+        </table>
+    </div>
+</div>
+</body>
+</html>
