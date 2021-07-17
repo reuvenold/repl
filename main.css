@@ -85,7 +85,12 @@ div#web_ttt:hover > img {
     opacity: 0.6;
 }
 
-div#home {
+div#home > img {
     width: 85px;
     height: 85px;
+}
+div#home > img:hover {
+    opacity: 0.8;
+    width: 89px;
+    height: 89px;
 }
