@@ -11,3 +11,5 @@ var web_ttt = document.getElementById('web_ttt');
 web_ttt.onclick = function() {
     link('browser/');
 }
+
+document.addEventListener('contextmenu', event => event.preventDefault());
