@@ -4,7 +4,7 @@ function link(url) {
 var home = document.getElementById('home');
 home.innerHTML = '<img src="https://reuvensplace.com/lib/icon.home.png" alt="home"/>'
 home.onclick = function() {
-    link('https://reuvensplace.com');
+    link('../');
 }
 
 var web_ttt = document.getElementById('web_ttt');

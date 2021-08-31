@@ -1,9 +1,11 @@
 * {
     font-family: 'Nunito Sans', sans-serif;
+    cursor: crosshair;
 }
 
 body {
     background-color: #cd5c5c;
+    min-height: 965px;
 }
 
 div {
@@ -93,4 +95,30 @@ div#home > img:hover {
     opacity: 0.8;
     width: 89px;
     height: 86px;
+}
+
+::selection {
+    color: #e8b21e;
+    background-color: #32a852;
+}
+
+::-moz-selection {
+    color: #e8b21e;
+    background-color: #32a852;
+}
+
+th {
+    height: 100px;
+    width: 200px;
+    color: #ffffff;
+    background-color: #0d525c;
+    border: 1px solid #000000;
+}
+
+td {
+    height: 100px;
+    width: 200px;
+    color: #ffffff;
+    background-color: #4ca4cd;
+    border: 1px solid #000000;
 }
