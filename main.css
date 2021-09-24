@@ -12,6 +12,31 @@ div {
     letter-spacing: 3px;
 }
 
+button.gb {
+    background: #32a852;
+    width: 200px;
+    height: 200px;
+    font-size: 20px;
+}
+button.bb {
+    background: #4ca4cd;
+    width: 200px;
+    height: 200px;
+    font-size: 20px;
+}
+
+tahi {
+    display: none;
+}
+
+bt {
+    font-size: 50px;
+}
+
+mt {
+    font-size: 15px;
+}
+
 h1#title {
     text-align: center;
     background-color: #1e90ff;
