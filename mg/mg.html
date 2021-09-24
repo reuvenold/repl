@@ -1,1 +1,33 @@
-
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Reuven's Place - Manifest Generator</title>
+        <meta charset="UTF-8"/>
+        <link rel="icon" href="../favicon.ico"/>
+        <link rel="stylesheet" type="text/css" href="../main.css"/>
+        <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200&display=swap"/>
+    </head>
+    <body>
+        <script>document.addEventListener('contextmenu', event => event.preventDefault());</script>
+    </body>
+    <form action="mg_action.html" autocomplete="off">
+        <input required type="text" placeholder="Name" name="name"/><br/><br/>
+        <input required type="text" placeholder="Description" name="description"><br/>
+        <input required type="number" placeholder="x" value="1" name="v1"/><bt>  . </bt>
+        <input required type="number" placeholder="y" value="0" name="v2"/><bt>  . </bt>
+        <input required type="number" placeholder="z" value="0" name="v3"/><br/><br/>
+        <input required type="radio" value="skin_pack" name="type"/><mt>Skin Pack</mt><br/>
+        <input required type="radio" value="resources" name="type"/><mt>Resources</mt><br/>
+        <input required type="radio" value="data" name="type"/><mt>Data</mt><br/><br/>
+        <input type="checkbox" name="addDependency" value="ON"/><mt>Add Dependency</mt><br/>
+        <tahi>
+            <br/>
+            <input type="text" placeholder="Dependency UUID" name="dep_uuid"/><br/>
+            <input type="number" placeholder="x" value="1" name="dep_v1"/><bt>  . </bt>
+            <input type="number" placeholder="y" value="0" name="dep_v2"/><bt>  . </bt>
+            <input type="number" placeholder="z" value="0" name="dep_v3"/>
+        </tahi><br/><br/>
+        <input type="submit" value="Submit"/>
+    </form>
+    <script src="mg.js"></script>
+</html>
