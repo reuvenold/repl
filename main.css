@@ -17,12 +17,14 @@ button.gb {
     width: 200px;
     height: 200px;
     font-size: 20px;
+    border: none;
 }
 button.bb {
     background: #4ca4cd;
     width: 200px;
     height: 200px;
     font-size: 20px;
+    border: none;
 }
 
 tahi {
