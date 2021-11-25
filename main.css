@@ -12,6 +12,10 @@ div {
     letter-spacing: 3px;
 }
 
+input#search {
+    width: 430px;
+}
+
 button.gb {
     background: #32a852;
     width: 200px;
