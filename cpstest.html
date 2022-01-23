@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CPS Test</title>
+        <style>
+            div#center {
+                text-align: center;
+                margin: 0px;
+            }
+            div#cps {
+                background: #06182c;
+                width: 1724px;
+                height: 512px;
+                border-radius: 8px;
+                color: #ffffdd;
+                font-family: sans-serif;
+                margin: 0;
+                display: none;
+            }
+            * {
+                font-family: 'Courier New', Courier, monospace;
+            }
+            div#start {
+                background-color: #51bb47;
+                height: 512px;
+                width: 1724px;
+                font-size: 25px;
+                border-radius: 8px;
+            }
+            div#count {
+                font-size: 35px;
+                font-style: bold;
+                display: none;
+                text-indent: 885px;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="center">
+            <div id="cps"></div>
+        </div>
+        <div id="start" onclick="startCount();"></div>
+        <div id="count"></div>
+    <script>
+        var clickCount = 1;
+        setInterval(()=>{document.getElementById('count').innerHTML = clickCount.toString()},10);
+        function startCount() {
+            document.getElementById('count').style.display = 'block';
+            document.getElementById('start').style.display = 'none';
+            document.getElementById('cps').style.display = 'block';
+            setTimeout(()=>{stopCount()},1000);
+            document.getElementById('cps').onclick = () => {
+                clickCount++;
+            }
+        }
+        function stopCount() {
+            document.getElementById('count').style.display = 'none';
+            document.getElementById('start').style.display = 'block';
+            document.getElementById('cps').style.display = 'none';
+            alert('Your CPS is ' + clickCount.toString());
+            document.getElementById('cps').onclick = () => {};
+            clickCount = 1;
+        }
+    </script>
+    </body>
+</html>
